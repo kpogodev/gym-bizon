@@ -1,8 +1,10 @@
 import { Outlet } from 'react-router-dom'
+import Navbar from '../navbar/Navbar'
 
 const Layout = () => {
   return (
-    <div className='w-full min-h-screen bg-[#111]'>
+    <div className='flex min-h-screen w-full flex-col bg-primary'>
+      <Navbar />
       <Outlet />
     </div>
   )
