@@ -1,5 +1,15 @@
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Layout from './components/ui/Layout'
+
 function App() {
-  return <h1>GymBizon</h1>
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path='/' element={<Home />} />
+      </Route>
+    </Routes>
+  )
 }
 
 export default App
